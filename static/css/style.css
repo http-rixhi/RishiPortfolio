@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 7px;
+    color: white;
+}
+
+body {
+    background-color: #1f242d;
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftnavbar div {
+    display: flex;
+    align-items: center;
+}
+
+.logoimg {
+    border-radius: 50%;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.logotxt {
+    text-decoration: none;
+    font-family: MV Boli;
+    font-size: 35px;
+    text-shadow: 0px 0px 20px blue;
+    cursor: default;
+}
+
+.rightnavbar a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.rightnavbar a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.rightnavbar a.active {
+    color: #0ef;
+}
+
+/* ****************************** INDEX.HTML ************************************** */
+
+.home {
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.split {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    padding: 1rem;
+}
+
+/* Style inside the centered container */
+.centered {
+    align-items: center;
+    text-align: center;
+}
+
+.centered img {
+    width: 60%;
+    border-radius: 18px;
+}
+
+.centered h1 {
+    color: peachpuff;
+    text-shadow: 0px 0px 12px purple;
+}
+
+.centered h3 {
+    color: wheat;
+}
+
+
+.feedback {
+    position: relative;
+}
+
+/* Style of Popular Projects SECTION */
+.subheadBorder {
+    height: 0.5mm;
+    border-width: 0;
+    width: 15%;
+    background-color: purple;
+}
+
+.headTitle h2 {
+    text-decoration: double underline;
+}
+
+
+.content {
+    border: 1px solid white;
+    width: 95%;
+    margin-top: 12px;
+    margin-right: 18px;
+}
+
+.content h3 {
+    text-decoration: underline;
+}
+
+.content div {
+    display: flex;
+    align-items: center;
+}
+
+.content div img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.content a {
+    color: blue;
+}
+
+.content-insider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-insider button {
+    background-color: blueviolet;
+    cursor: pointer;
+    padding: 8px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.content-insider button:hover {
+    background-color: aqua;
+}
+
+/* Style of Feedback SECTION */
+.feedinput {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.feedinput h4 {
+    width: 40%;
+}
+
+.feedinput input {
+    color: black;
+    background-color: antiquewhite;
+}
+
+.feedinput textarea {
+    color: black;
+    background-color: antiquewhite;
+}
+
+#submitbtn {
+    color: black;
+    background-color: red;
+    font-weight: bolder;
+    font-size: large;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#submitbtn:hover {
+    background-color: #0ef;
+}
