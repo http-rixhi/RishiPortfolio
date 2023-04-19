@@ -9,8 +9,17 @@
     </nav>
 
     <nav class="rightnavbar">
-        <a href="{% url 'index' %}" class="active">Home</a>
-        <a href="{% url 'About' %}">About</a>
-        <a href="{% url 'Contact' %}">Contact</a>
+        <ul class="nav-links">
+
+            <!-- For hamburger in phoneview -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <div class="menu">
+                <li><a href="{% url 'index' %}" class="active">Home</a></li>
+                <li><a href="{% url 'About' %}">About</a></li>
+                <li><a href="{% url 'Contact' %}">Contact</a></li>
+            </div>
+        </ul>
     </nav>
 </header>

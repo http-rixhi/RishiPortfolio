@@ -55,6 +55,27 @@ body {
     color: #0ef;
 }
 
+.nav-links li {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
 /* ****************************** INDEX.HTML ************************************** */
 
 .home {
@@ -193,7 +214,7 @@ body {
 
 
 /* Style for the phone view */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     body {
         width: auto;
     }
@@ -202,13 +223,44 @@ body {
         width: 100%;
     }
 
+    /* customizing hamburger */
+    .menu {
+        display: none;
+        position: relative;
+        background-color: black;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: block;
+        background-color: teal;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* ------------------------------------------- */
+
     .split {
-      display: block;
-      width: auto;
+        display: block;
+        width: auto;
     }
 
     .socialicons {
         display: grid;
         grid-template-columns: auto auto auto;
     }
-  }
+}
