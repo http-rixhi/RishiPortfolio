@@ -4,135 +4,140 @@
 {% block body %}
 
 {% load static %}
-<section class="home">
-    <div class="split left">
-        <div class="centered">
-            <h1>Heyy, I'm Rishi Raj</h1>
-            <h3>Student of B.Tech IT in GL Bajaj Institute of Technology & Management</h3>
-            <p>
-                I have always had a passion for coding and programming. Still, it wasn’t until the junior year that I
-                began to take it seriously.
-                In the past year or so, my coding has become more refined and polished. I have been able to apply what
-                I’ve learned in school to
-                helpothers in any way.
-                My goal is to eventually be able to develop a program that help at a large scale and solve problems in
-                the future.
-            </p>
-            <div class="socialicons">
-                <a href="https://www.linkedin.com/in/rishii-raj/"><box-icon size="lg" color="skyblue" type='logo'
-                        name='linkedin-square' class="bx-tada-hover"></box-icon></a>
-                <a href="https://github.com/itzz-rr"><box-icon size="lg" color="white" type='logo' name='github'
-                        class="bx-tada-hover"></box-icon></a>
-                <a href="https://www.instagram.com/itzzz_rr"><box-icon size="lg" color="palevioletred" type='logo'
-                        name='instagram' class="bx-tada-hover"></box-icon></a>
-                <a href="https://www.youtube.com/@rishiscaptures"><box-icon size="lg" color="red" type='logo'
-                        name='youtube' class="bx-tada-hover"></box-icon></a>
-                <a href="https://twitter.com/itzzz_rr"><box-icon size="lg" color="dodgerblue" type='logo' name='twitter'
-                        class="bx-tada-hover"></box-icon></a>
-                <a href="https://steamcommunity.com/id/rishi-raj/"><box-icon size="lg" color="blue" type='logo'
-                        name='steam' class="bx-tada-hover"></box-icon></a>
+
+<body>
+    <section class="home">
+        <div class="split right">
+            <div class="centered">
+                <img class="imagesize" src="{% static 'images/imgRishi.png' %}" alt="img">
             </div>
         </div>
-    </div>
-    <div class="split right">
-        <div class="centered">
-            <img class="imagesize" src="{% static 'images/imgRishi.png' %}" alt="img">
+
+        <div class="split left">
+            <div class="centered">
+                <h1>Heyy, I'm Rishi Raj</h1>
+                <h3>Student of B.Tech IT in GL Bajaj Institute of Technology & Management</h3>
+                <p>
+                    A passionate student for coding, programming and also gaming. My goal is to eventually be able to
+                    develop a program that help at a large scale and solve problems in the future.
+                </p>
+                <div class="socialicons">
+                    <a href="https://www.linkedin.com/in/rishii-raj/"><box-icon size="lg" color="skyblue" type='logo'
+                            name='linkedin-square' class="bx-tada-hover"></box-icon></a>
+                    <a href="https://github.com/itzz-rr"><box-icon size="lg" color="white" type='logo' name='github'
+                            class="bx-tada-hover"></box-icon></a>
+                    <a href="https://www.instagram.com/itzzz_rr"><box-icon size="lg" color="palevioletred" type='logo'
+                            name='instagram' class="bx-tada-hover"></box-icon></a>
+                    <a href="https://www.youtube.com/@rishiscaptures"><box-icon size="lg" color="red" type='logo'
+                            name='youtube' class="bx-tada-hover"></box-icon></a>
+                    <a href="https://twitter.com/itzzz_rr"><box-icon size="lg" color="dodgerblue" type='logo'
+                            name='twitter' class="bx-tada-hover"></box-icon></a>
+                    <a href="https://steamcommunity.com/id/rishi-raj/"><box-icon size="lg" color="blue" type='logo'
+                            name='steam' class="bx-tada-hover"></box-icon></a>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-<!-- ============================================================================================== -->
+
+    </section>
+    <!-- ============================================================================================== -->
 
 
-<!-- ============================================================================================== -->
-<section class="projects">
-    <div class="headTitle">
-        <hr class="subheadBorder">
-        <h2>Special Projects</h2>
-    </div>
+    <!-- ============================================================================================== -->
+    <section class="projects">
+        <div class="headTitle">
+            <hr class="subheadBorder">
+            <h2>Special Projects</h2>
+        </div>
 
-    <div class="content-container">
-        <article class="content">
-            <div class="content-insider">
-                <h3>Area-Volume Calculator</h3>
-                <h4>Language: C++</h4>
-            </div>
-            <div>
-                <img src="{% static 'images/area-volumeCalci.png' %}" alt="">
-                <p>
-                    This is basically a simple terminal based Calculator, which calculates areas and volumes of
-                    of few existings shapes. It is coded in C++ languange.
-                </p>
-            </div>
-            <div class="content-insider">
-                <a href="#">Read Full Article...</a>
-                <button onclick="window.location.href = '#'">Download</button>
-            </div>
-        </article>
+        <div class="content-container">
+            <article class="content">
+                <div class="content-insider">
+                    <h3>Area-Volume Calculator</h3>
+                    <h4>Language: C++</h4>
+                </div>
+                <div>
+                    <img src="{% static 'images/area-volumeCalci.png' %}" alt="">
+                    <p>
+                        This is basically a simple terminal based Calculator, which calculates areas and volumes of
+                        of few existings shapes. It is coded in C++ languange.
+                    </p>
+                </div>
+                <div class="content-insider">
+                    <a href="#">Read Full Article...</a>
+                    <button onclick="window.location.href = '#'">Download</button>
+                </div>
+            </article>
 
-        <article class="content">
-            <div class="content-insider">
-                <h3>Basic Calculator</h3>
-                <h4>Language: JAVA</h4>
-            </div>
-            <div>
-                <img src="{% static 'images/calculator.png' %}" alt="">
-                <p>
-                    This is basically a simple basic Calculator app for android and also the first UI Android Application I made, 
-                    which just perform mathematical operations like adding, subtracting, multiplication & division.
-                </p>
-            </div>
-            <div class="content-insider">
-                <a href="#">Read Full Article...</a>
-                <button onclick="window.location.href = 'https://drive.google.com/file/d/1b3jQ4Jp5xiV3uOadlkToza85E4Mjbq1q/view?usp=drivesdk'">Download</button>
-            </div>
-        </article>
+            <article class="content">
+                <div class="content-insider">
+                    <h3>Basic Calculator</h3>
+                    <h4>Language: JAVA</h4>
+                </div>
+                <div>
+                    <img src="{% static 'images/calculator.png' %}" alt="">
+                    <p>
+                        This is basically a simple basic Calculator app for android and also the first UI Android
+                        Application I made,
+                        which just perform mathematical operations like adding, subtracting, multiplication & division.
+                    </p>
+                </div>
+                <div class="content-insider">
+                    <a href="#">Read Full Article...</a>
+                    <button
+                        onclick="window.location.href = 'https://drive.google.com/file/d/1b3jQ4Jp5xiV3uOadlkToza85E4Mjbq1q/view?usp=drivesdk'">Download</button>
+                </div>
+            </article>
 
-        <article class="content">
-            <div class="content-insider">
-                <h3>Connexchange</h3>
-                <h4>Language: Flutter</h4>
-            </div>
-            <div>
-                <img src="{% static 'images/main_logo.png' %}" alt="">
-                <p>
-                    This is an application for exchanging our all social connections with just one click or say scan. 
-                    In this application you have to just setup for 1st time with your all usernames and thi app will 
-                    make a single qr code for all those usernames, then you have to just share that qrcode to anyone 
-                    for getting followers in every social media account.
-                </p>
-            </div>
-            <div class="content-insider">
-                <a href="#">Read Full Article...</a>
-                <button onclick="window.location.href = '#'">Download</button>
-            </div>
-        </article>
+            <article class="content">
+                <div class="content-insider">
+                    <h3>Connexchange</h3>
+                    <h4>Language: Flutter</h4>
+                </div>
+                <div>
+                    <img src="{% static 'images/main_logo.png' %}" alt="">
+                    <p>
+                        This is an application for exchanging our all social connections with just one click or say
+                        scan.
+                        In this application you have to just setup for 1st time with your all usernames and thi app will
+                        make a single qr code for all those usernames, then you have to just share that qrcode to anyone
+                        for getting followers in every social media account.
+                    </p>
+                </div>
+                <div class="content-insider">
+                    <a href="#">Read Full Article...</a>
+                    <button onclick="window.location.href = '#'">Download</button>
+                </div>
+            </article>
 
-    </div>
-</section>
-<!-- ============================================================================================== -->
+        </div>
+    </section>
+    <!-- ============================================================================================== -->
 
 
-<!-- ============================================================================================== -->
-<section class="feedback">
-    <div class="centered">
-        <hr>
-        <br>
-        <h2>Feel free to share your feedback or Suggestions</h2>
-        <br>
-        <form class="feedinput">
-            <h4>Name: <input type="text" name="name" id="name" required></h4>
-            <h4>Email: <input type="email" name="email" id="email" required></h4>
-            <h4>Phone: <input type="tel" name="phone" id="phone"></h4>
-            <h4>Screenshot (If Any): <input type="file" name="screenshot" id="screenshot"></h4>
-            <h4>Description: <textarea name="description" id="description" cols="50" rows="5" required></textarea></h4>
-        </form>
-        <br>
-        <button type="submit" id="submitbtn">Submit</button>
-        <br>
+    <!-- ============================================================================================== -->
+    <section class="feedback">
+        <div class="centered">
+            <hr>
+            <br>
+            <h2>Feel free to share your feedback or Suggestions</h2>
+            <br>
+            <form class="feedinput">
+                <h4>Name: <input type="text" name="name" id="name" required></h4>
+                <h4>Email: <input type="email" name="email" id="email" required></h4>
+                <h4>Phone: <input type="tel" name="phone" id="phone"></h4>
+                <h4>Screenshot (If Any): <input type="file" name="screenshot" id="screenshot"></h4>
+                <h4>Description: <textarea name="description" id="description" cols="50" rows="5" required></textarea>
+                </h4>
+            </form>
+            <br>
+            <button type="submit" id="submitbtn">Submit</button>
+            <br>
 
-    </div>
-</section>
+        </div>
+    </section>
 
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
 
 {% endblock body %}

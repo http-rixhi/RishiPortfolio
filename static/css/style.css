@@ -168,11 +168,13 @@ body {
 .feedinput input {
     color: black;
     background-color: antiquewhite;
+    width: 100%;
 }
 
 .feedinput textarea {
     color: black;
     background-color: antiquewhite;
+    width: 100%;
 }
 
 #submitbtn {
@@ -187,3 +189,26 @@ body {
 #submitbtn:hover {
     background-color: #0ef;
 }
+
+
+
+/* Style for the phone view */
+@media screen and (max-width: 600px) {
+    body {
+        width: auto;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .split {
+      display: block;
+      width: auto;
+    }
+
+    .socialicons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+  }
