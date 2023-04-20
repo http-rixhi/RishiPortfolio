@@ -193,48 +193,102 @@ input[type=checkbox] {
     75% {opacity: 0;}
     100% {opacity: 0;}
 }
+/* ---------------------------------------------------- */
 
 /* Style of Timeline SECTION */
-/*
 .timeline {
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+/* @keyframes zoomInOut {
+    0%,100%{
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+} */
+
+.myimg {
+    margin-bottom: -15px;
+    margin-left: 37%;
+    border-radius: 50%;
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.checkpoint {
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     position: relative;
-}
-
-.container {
-    position: relative;
-    padding: 10px 50px;
-    width: 46%;
-}
-
-.left-container {
-    left: 0;
-}
-
-.right-container {
-    left: 50%;
-}
-
-.container box-icon {
-    position: absolute;
-    right: -20px;
-    top: 50px;
-    z-index: 10;
-}
-
-.right-container box-icon {
-    left: -20px;
 }
 
 .text-box {
-    position: relative;
-    padding: 20px 30px;
-    background: white;
+    border: 2px solid white;
     border-radius: 8px;
-    font-size: 19px;
+    padding: 1.5em;
 }
+
+.checkpoint:nth-child(odd) {
+    border-left: 3px solid white;
+    padding-left: 3em;
+    transform: translateX(16.95em);
+}
+
+.checkpoint:nth-child(even) {
+    border-right: 3px solid white;
+    padding-right: 3em;
+    transform: translateX(-17em);
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+    content: '';
+    background: white;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.checkpoint:nth-child(odd)::before {
+    left: 0;
+}
+
+.checkpoint:nth-child(even)::before {
+    right: 0;
+}
+
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before {
+    content: '';
+    background: white;
+    box-shadow: 0 0 0.5em red;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before {
+    left: -0.5em;
+}
+
+.checkpoint:nth-child(even) div::before {
+    right: -0.5em;
+}
+
 
 .text-box h2 {
     color: red;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 .text-box small {
@@ -242,21 +296,9 @@ input[type=checkbox] {
 }
 
 .text-box ul, li {
-    color: black;
     font-weight: 500;
+    font-size: 22px;
 }
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: white;
-    left: 52%;
-    top: 0;
-    z-index: -1;
-    margin-left: -3px;
-} */
 
 /* ------------------------------------------- */
 
@@ -400,9 +442,9 @@ input[type=checkbox] {
     .hamburger {
         display: block;
     }
-
     /* ------------------------------------------- */
 
+    /* customizing social media icons */
     .split {
         display: block;
         width: auto;
@@ -411,5 +453,41 @@ input[type=checkbox] {
     .socialicons {
         display: grid;
         grid-template-columns: auto auto auto;
+    }
+    /* ---------------------------------------- */
+
+    /* customizing timeline */
+    .timeline {
+        width: 80vw;
+    }
+
+    .myimg {
+        margin-bottom: 16px;
+        margin-left: 40%;
+        border-radius: 50%;
+        max-width: 70px;
+        max-height: 70px;
+    }
+    
+    .timeline .checkpoint {
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+
+    .timeline .checkpoint::before {
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline .checkpoint div::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
