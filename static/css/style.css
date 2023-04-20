@@ -63,6 +63,7 @@ body {
     display: flex;
     gap: 1em;
     font-size: 18px;
+    color: white;
 }
 
 input[type=checkbox] {
@@ -81,7 +82,7 @@ input[type=checkbox] {
 .home {
     position: relative;
     display: table;
-    height: 100%;
+    height: 80vh;
     width: 100%;
 }
 
@@ -118,7 +119,152 @@ input[type=checkbox] {
     position: relative;
 }
 
+.passion {
+    margin-left: -100px;
+}
+
+.passion h2 span {
+    position: absolute;
+    margin-top: -5.5px;
+}
+
+.student {
+    animation-name: student;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes student {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+.coder {
+    animation-name: coder;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes coder {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+.gamer {
+    animation-name: gamer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gamer {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.developer {
+    animation-name: developer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes developer {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.trial {
+    animation-name: trial;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes trial {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/* Style of Timeline SECTION */
+/*
+.timeline {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    padding: 10px 50px;
+    width: 46%;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.container box-icon {
+    position: absolute;
+    right: -20px;
+    top: 50px;
+    z-index: 10;
+}
+
+.right-container box-icon {
+    left: -20px;
+}
+
+.text-box {
+    position: relative;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 8px;
+    font-size: 19px;
+}
+
+.text-box h2 {
+    color: red;
+}
+
+.text-box small {
+    color: blue;
+}
+
+.text-box ul, li {
+    color: black;
+    font-weight: 500;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: white;
+    left: 52%;
+    top: 0;
+    z-index: -1;
+    margin-left: -3px;
+} */
+
+/* ------------------------------------------- */
+
 /* Style of Popular Projects SECTION */
+.projects {
+    position: relative;
+}
+
 .subheadBorder {
     height: 0.5mm;
     border-width: 0;
@@ -130,6 +276,9 @@ input[type=checkbox] {
     text-decoration: double underline;
 }
 
+.content-container {
+    position: relative;
+}
 
 .content {
     border: 1px solid white;
