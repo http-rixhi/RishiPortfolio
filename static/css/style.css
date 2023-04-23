@@ -201,16 +201,6 @@ input[type=checkbox] {
     max-width: 34.15em;
 }
 
-/* @keyframes zoomInOut {
-    0%,100%{
-        transform: scale(0.5);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-} */
-
 .myimg {
     margin-bottom: -15px;
     margin-left: 37%;
@@ -227,9 +217,11 @@ input[type=checkbox] {
 }
 
 .text-box {
-    border: 2px solid white;
+    border: 2px solid yellow;
     border-radius: 8px;
     padding: 1.5em;
+    background-image: url('/static/images/timeline-background1.jpeg');
+    background-size: cover;
 }
 
 .checkpoint:nth-child(odd) {
@@ -252,7 +244,7 @@ input[type=checkbox] {
     height: 3px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
 }
 
 .checkpoint:nth-child(odd)::before {
@@ -298,6 +290,7 @@ input[type=checkbox] {
 .text-box ul, li {
     font-weight: 500;
     font-size: 22px;
+    color: black;
 }
 
 /* ------------------------------------------- */
@@ -490,4 +483,7 @@ input[type=checkbox] {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .subheadBorder {
+        width: 40%;
 }
