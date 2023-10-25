@@ -382,7 +382,7 @@ input[type=checkbox] {
     width: 100%;
 }
 
-#submitbtn {
+.submitbtn {
     color: black;
     background-color: red;
     font-weight: bolder;
@@ -391,7 +391,7 @@ input[type=checkbox] {
     cursor: pointer;
 }
 
-#submitbtn:hover {
+.submitbtn:hover {
     background-color: #0ef;
 }
 
