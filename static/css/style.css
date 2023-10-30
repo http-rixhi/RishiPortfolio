@@ -507,6 +507,7 @@ input[type=checkbox] {
   padding: 30px 10px;
   font-family: 'DM Sans', sans-serif;
   transition: background .4s ease-in;
+  overflow: hidden;
   
   &.blue {
     background-color: #428aa6;
@@ -526,6 +527,7 @@ input[type=radio] {
   margin: auto;
   transition: transform .4s ease;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .container {
@@ -538,6 +540,7 @@ input[type=radio] {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .cards {
@@ -576,7 +579,7 @@ input[type=radio] {
   }
 }
 
-/* .player {
+.player {
   background-color: #fff;
   border-radius: 8px;
   min-width: 320px;
@@ -648,4 +651,4 @@ input[type=radio] {
   top: 0;
   left: 30px;
   transition: transform .4s ease-in;
-} */
+}
