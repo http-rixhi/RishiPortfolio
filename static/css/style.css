@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
 * {
     margin: 0;
     padding: 7px;
@@ -490,13 +492,12 @@ input[type=checkbox] {
     }
 }
 
-@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
-
+/* Style for Certification Section */
 .cerfication {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .cerfication {
@@ -506,7 +507,6 @@ input[type=checkbox] {
   padding: 30px 10px;
   font-family: 'DM Sans', sans-serif;
   transition: background .4s ease-in;
-  background-color: #c394f8;
   
   &.blue {
     background-color: #428aa6;
@@ -531,7 +531,7 @@ input[type=radio] {
 .container {
   width: 100%;
   max-width: 800px;
-  max-height: 600px;
+  max-height: 700px;
   height: 100%;
   transform-style: preserve-3d;
   display: flex;
@@ -547,7 +547,7 @@ input[type=radio] {
   margin-bottom: 20px;
 }
 
-img {
+.certi {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -571,12 +571,12 @@ img {
   opacity: 1;
   z-index: 1;
   
-  img {
+  .certi {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
   }
 }
 
-.player {
+/* .player {
   background-color: #fff;
   border-radius: 8px;
   min-width: 320px;
@@ -648,4 +648,4 @@ img {
   top: 0;
   left: 30px;
   transition: transform .4s ease-in;
-}
+} */
