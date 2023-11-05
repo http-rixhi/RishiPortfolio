@@ -571,7 +571,7 @@ li {
 }
 
 /* Style for Certification Section */
-.certification {
+/* .certification {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -742,4 +742,4 @@ input[type=radio] {
     top: 0;
     left: 30px;
     transition: transform .4s ease-in;
-}
+} */
