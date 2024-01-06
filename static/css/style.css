@@ -476,7 +476,7 @@ li {
 
 
 /* Style for the phone and tab view */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 480px) {
     body {
         width: auto;
     }
