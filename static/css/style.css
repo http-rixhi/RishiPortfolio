@@ -591,10 +591,10 @@ li {
     }
 
     .container {
-    width: 80%;
-    max-width: 400px;
-    max-height: 60%;
-    height: 60%;
+    width: 20%;
+    max-width: 100px;
+    max-height: 10%;
+    height: 10%;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -604,8 +604,8 @@ li {
 
     .card {
     position: absolute;
-    width: 40%;
-    height: 60%;
+    width: 20%;
+    height: 10%;
     left: 0;
     right: 0;
     margin: auto;
@@ -717,7 +717,7 @@ input[type=radio] {
     }
 }
 
-.player {
+/* .player {
     background-color: #fff;
     border-radius: 8px;
     min-width: 320px;
@@ -735,7 +735,7 @@ input[type=radio] {
 
 .play-icon {
     margin-right: 10px;
-}
+} */
 
 .certificate-info {
     width: calc(100% - 32px);
@@ -754,7 +754,7 @@ input[type=radio] {
     width: 100%;
 }
 
-.subtitle,
+/* .subtitle,
 .time {
     font-size: 12px;
     line-height: 16px;
@@ -784,7 +784,7 @@ input[type=radio] {
     height: 100%;
     background-color: #2992dc;
     border-radius: 6px;
-}
+} */
 
 .info-area {
     width: 100%;
